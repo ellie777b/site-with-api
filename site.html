@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Healthy - Здравословен начин на живот</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #28a745;
+            color: white;
+            text-align: left;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            width: 50px;
+            height: auto;
+            margin-right: 15px;
+        }
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        section {
+            padding: 20px;
+            display: none;
+        }
+        .active-section {
+            display: block;
+        }
+        h2, h3 {
+            color: #28a745;
+        }
+        .recipe {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .recipe img {
+            width: 300px;  /* Променяме размерите на снимките */
+            height: auto;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        .recipe ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 16px;
+        }
+        .recipe li {
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="images/logo.jpg" alt="Лого на Live Healthy" class="logo">
+    <h1>Live Healthy</h1>
+</header>
+
+<nav>
+    <a onclick="showSection('home')">Начало</a>
+    <a onclick="showSection('recipes')">Рецепти</a>
+    <a onclick="showSection('contact')">Контакти</a>
+</nav>
+
+<section id="home" class="active-section">
+    <h2>Добре дошли в Live Healthy</h2>
+    <p>Нашата мисия е да Ви помогнем да водите по-здравословен начин на живот чрез лесни и вкусни рецепти, както и полезни съвети за хранене и фитнес.</p>
+
+    <!-- Центрирани рецепти с изображения и грамажи -->
+    <div class="recipe">
+        <h3>Зелено смути</h3>
+        <img src="images/smoothie.jpg" alt="Зелено смути">
+        <ul>
+            <li>Спанак - 100 г</li>
+            <li>Авокадо - 1 бр.</li>
+            <li>Краставица - 1/2 бр.</li>
+            <li>Ябълка - 1 бр.</li>
+            <li>Лимонов сок - 1 с.л.</li>
+            <li>Мед - 1 ч.л.</li>
+        </ul>
+        <p><strong>Начин на приготвяне:</strong> Блендирайте всички съставки до гладка смес и сервирайте.</p>
+    </div>
+    <div class="recipe">
+        <h3>Салата с киноа</h3>
+        <img src="images/quinoa-salad.jpg" alt="Салата с киноа">
+        <ul>
+            <li>Киноа - 100 г</li>
+            <li>Чери домати - 6 бр.</li>
+            <li>Краставица - 1/2 бр.</li>
+            <li>Рукола - 50 г</li>
+            <li>Лимонов сок - 1 с.л.</li>
+            <li>Зехтин - 1 с.л.</li>
+        </ul>
+        <p><strong>Начин на приготвяне:</strong> Смесете съставките и подправете с лимонов сок и зехтин.</p>
+    </div>
+    <div class="recipe">
+        <h3>Плодова салата</h3>
+        <img src="images/fruit-salad.jpg" alt="Плодова салата">
+        <ul>
+            <li>Ябълка - 1 бр.</li>
+            <li>Портокал - 1 бр.</li>
+            <li>Киви - 2 бр.</li>
+            <li>Банан - 1 бр.</li>
+            <li>Малини - 50 г</li>
+            <li>Мед - 1 ч.л.</li>
+        </ul>
+        <p><strong>Начин на приготвяне:</strong> Смесете нарязаните плодове и полейте с малко мед.</p>
+    </div>
+</section>
+
+<section id="recipes">
+    <h2>Допълнителни рецепти</h2>
+    <div class="recipe">
+        <h3>Смути с боровинки</h3>
+        <ul>
+            <li>Боровинки - 100 г</li>
+            <li>Банан - 1 бр.</li>
+            <li>Кисело мляко - 150 г</li>
+            <li>Мед - 1 ч.л.</li>
+            <li>Лед - 3-4 кубчета</li>
+        </ul>
+        <p><strong>Начин на приготвяне:</strong> Блендирайте всички съставки до гладка смес.</p>
+    </div>
+    <div class="recipe">
+        <h3>Печени зеленчуци</h3>
+        <ul>
+            <li>Чушки - 2 бр.</li>
+            <li>Тиквички - 1 бр.</li>
+            <li>Патладжан - 1/2 бр.</li>
+            <li>Зехтин - 2 с.л.</li>
+            <li>Подправки - на вкус</li>
+        </ul>
+        <p><strong>Начин на приготвяне:</strong> Изпечете зеленчуците, овкусени със зехтин и подправки.</p>
+    </div>
+    <div class="recipe">
+        <h3>Салата с нахут</h3>
+        <ul>
+            <li>Нахут - 200 г</li>
+            <li>Чери домати - 6 бр.</li>
+            <li>Краставица - 1 бр.</li>
+            <li>Червен лук - 1/2 бр.</li>
+            <li>Магданоз - 20 г</li>
+        </ul>
+        <p><strong>Начин на приготвяне:</strong> Смесете нахута със зеленчуците и подправете.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Контакти</h2>
+    <p>Телефон: <a href="tel:+0888000800">0888000800</a></p>
+    <p>Имейл: <a href="mailto:livehealthy@mail.com">livehealthy@mail.com</a></p>
+    <p>Адрес: бул. Витоша 100, София 1000, България</p>
+
+    <h2>Бонус рецепта: Здравословна зърнена закуска</h2>
+    <ul>
+        <li>Овесени ядки - 50 г</li>
+        <li>Кисело мляко - 100 г</li>
+        <li>Пресни плодове - 100 г</li>
+        <li>Мед - 1 ч.л.</li>
+        <li>Орехи - 20 г</li>
+    </ul>
+    <p><strong>Начин на приготвяне:</strong> Смесете овесените ядки с киселото мляко, добавете плодове, мед и орехи.</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Live Healthy - Всички права запазени.</p>
+</footer>
+
+<script>
+    function showSection(sectionId) {
+        // Скриваме всички секции
+        const sections = document.querySelectorAll("section");
+        sections.forEach(section => section.classList.remove("active-section"));
+        
+        // Показваме избраната секция
+        document.getElementById(sectionId).classList.add("active-section");
+    }
+</script>
+
+</body>
+</html>
+
